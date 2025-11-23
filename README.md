@@ -4,7 +4,8 @@
 ------------------------------------------------------------------------------------
 
 Дополнение для файлового менеджера Thunar
-sudo pacman -S thunar thunar-volman gvfs gvfs-mtp gvfs-gphoto2 udisks2
+1) sudo pacman -S thunar thunar-volman gvfs gvfs-mtp gvfs-gphoto2 udisks2
+   
     thunar-volman – плагин для автоподключения съёмных носителей.
     gvfs – обеспечивает доступ к виртуальным файловым системам (MTP, SMB, FTP и т.д.).
     gvfs-mtp/gvfs-gphoto2 – для работы с телефонами и камерами.
