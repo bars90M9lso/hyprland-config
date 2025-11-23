@@ -1,6 +1,14 @@
 # hyprland-config
 Конфиги для Arch
 
+Установка yay
+1) git clone https://aur.archlinux.org/yay.git
+2) cd yay
+3) makepkg -si
+
+
+Установка диспечера задачь Mission Center
+1) yay -S mission-center
 
 
 Управления подсветкой квавиатуры для ПК от Clevo
