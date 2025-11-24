@@ -49,3 +49,20 @@ https://novacustom.com/clevo-keyboard-backlight-control-for-linux/
 
 1) sudo pacman -S linux-headers (если не установлен)
 2) wget https://github.com/wessel-novacustom/clevo-keyboard/raw/master/kb.sh && chmod +x kb.sh && sudo ./kb.sh
+
+------------------------------------------------------------------------------------
+
+Установка темы SDDM https://github.com/Keyitdev/sddm-astronaut-theme/tree/master
+1) sudo pacman -S sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
+2) sudo git clone -b master --depth 1 https://github.com/Keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
+3) sudo cp -r /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
+4) создаём файл в /etc/sddm.conf
+   [Theme]
+   Current=sddm-astronaut-theme
+5) создаем файл /etc/sddm.conf.d/virtualkbd.conf
+   [General]
+   InputMethod=qtvirtualkeyboard
+6) заходи usr/share/sddm/themes/sddm-astronaut-theme/metadata.desktop и редактируем ConfigFile=Themes/cyberpunk.conf 
+                                                                  (вариация тем находиться в тойже папке)
+
+sddm-greeter-qt6 --test-mode --theme /usr/share/sddm/themes/sddm-astronaut-theme/ (тестирование)
