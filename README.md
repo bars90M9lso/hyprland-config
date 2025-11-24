@@ -23,6 +23,11 @@
 chmod +x ~/.config/hypr/toggle_kbd_backlight.sh
 echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
+------------------------------------------------------------------------------------
+
+Установка MangoHud
+1) sudo pacman -S mangohud
+2) sudo vim ~/.config/MangoHud/MangoHud.conf (изменения конфига)
 
 ------------------------------------------------------------------------------------
 
