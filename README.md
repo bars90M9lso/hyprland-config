@@ -3,6 +3,25 @@
 
 ------------------------------------------------------------------------------------
 
+Установка руского языка в системе
+1) sudo vim /etc/locale.gen 
+   ищем и ракомен. ru_RU.UTF-8 UTF-8
+2) sudo locale-gen
+3) sudo vim /etc/locale.conf
+   добавляем LANG=ru_RU.UTF-8
+4) set -x LANG ru_RU.UTF-8
+   set -x LC_ALL ru_RU.UTF-8
+5) проверка локами - locale
+
+------------------------------------------------------------------------------------
+Установка анлог запретов https://github.com/Sergeydigl3/zapret-discord-youtube-linux
+1) git clone https://github.com/Sergeydigl3/zapret-discord-youtube-linux.git
+2) cd zapret-discord-youtube-linux
+3) sudo bash main_script.sh
+4) sudo bash service.sh
+
+------------------------------------------------------------------------------------
+
 Дополнение для файлового менеджера Thunar
 1) sudo pacman -S thunar thunar-volman gvfs gvfs-mtp gvfs-gphoto2 udisks2
    
