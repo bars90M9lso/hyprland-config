@@ -59,7 +59,7 @@ https://novacustom.com/clevo-keyboard-backlight-control-for-linux/
 4) создаём файл в /etc/sddm.conf
    [Theme]
    Current=sddm-astronaut-theme
-5) создаем файл /etc/sddm.conf.d/virtualkbd.conf
+5) создаем файл /etc/sddm.conf.d/virtualkbd.conf (ломает сиситему)
    [General]
    InputMethod=qtvirtualkeyboard
 6) заходи usr/share/sddm/themes/sddm-astronaut-theme/metadata.desktop и редактируем ConfigFile=Themes/cyberpunk.conf 
