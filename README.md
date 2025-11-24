@@ -10,13 +10,14 @@
 1) chsh
 2) /bin/fish
 Установка тем (меняется через gui-приложение):
-1) git clone https://github.com/vincelivice/Graphite-gtk-theme
+1) git clone https://github.com/vinceliuice/Graphite-gtk-theme
 2) cd Graphite-gtk-theme/
 3) ./install.sh
+
 Скачивание конфигов: git clone https://github.com/bars90M9lso/hyprland-config/
 Скачивание шрифтов: sudo pacman -5 ttf-font-awesome otf-font-awesome ttf-jetbrains-mono
-
-для отображение fastfetch в shell копируем конфиг с репозитория
+ 
+Копируем конфиги из репазитория в свои папки
 
 ------------------------------------------------------------------------------------
 
