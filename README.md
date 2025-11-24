@@ -3,7 +3,7 @@
 
 ------------------------------------------------------------------------------------
 
-Предустановка программ в Archinstall: git, fifefox, blueman, thunar, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils)
+Предустановка программ в Archinstall: git, fifefox, blueman, thunar, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils), hyprshot
 
 Доп.пакеты: nwg-look papirus-icon-theme fastfetch, 
 
