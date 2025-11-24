@@ -3,7 +3,7 @@
 
 ------------------------------------------------------------------------------------
 
-Предустановка программ в Archinstall: git, fifefox, blueman, thunar, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils), hyprshot
+Предустановка программ в Archinstall: git, fifefox, blueman, thunar, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils), 
 
 Доп.пакеты: nwg-look papirus-icon-theme fastfetch, 
 
@@ -87,8 +87,12 @@ echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 Установка light для управления яркостью экрана
 1) yay -S light
 2) sudo chmod +s /usr/bin/light (даём разрешение на изменение)
+Бинд есть в hyprland.conf
 
 ------------------------------------------------------------------------------------
+Установка hyprshot - для скриншотов
+1) yay -S hyprshot
+Бинд есть в hyprland.conf
 
 Установка NormCap - утилита для захвата текста с экрана + OCR + копирование в буфер
 1) yay -S normcap
@@ -99,6 +103,7 @@ echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
 Установка диспечера задачь Mission Center
 1) yay -S mission-center
+Бинд есть в hyprland.conf
 
 ------------------------------------------------------------------------------------
 
