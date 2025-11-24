@@ -3,6 +3,40 @@
 
 ------------------------------------------------------------------------------------
 
+Предустановка программ в Archinstall: git, fifefox, blueman, thunar, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils)
+Доп.пакеты: nwg-look papirus-icon-theme fastfetch, 
+
+Замена Shell:
+1) chsh
+2) /bin/fish
+Установка тем (меняется через gui-приложение):
+1) git clone https://github.com/vincelivice/Graphite-gtk-theme
+2) cd Graphite-gtk-theme/
+3) ./install.sh
+Скачивание конфигов: git clone https://github.com/bars90M9lso/hyprland-config/
+Скачивание шрифтов: sudo pacman -5 ttf-font-awesome otf-font-awesome ttf-jetbrains-mono
+
+для отображение fastfetch в shell копируем конфиг с репозитория
+
+------------------------------------------------------------------------------------
+
+Установка wlogout - панелька выхода/завершение систему
+1) sudo pacman -S meson
+2) https://github.com/ArtsyMacaw/wlogout.git
+3) cd wlogout/
+4) meson build
+5) ninja -C build
+6) sudo ninja -C build install
+
+------------------------------------------------------------------------------------
+
+Установка yay
+1) git clone https://aur.archlinux.org/yay.git
+2) cd yay
+3) makepkg -si
+
+------------------------------------------------------------------------------------
+
 Установка руского языка в системе
 1) sudo vim /etc/locale.gen 
    ищем и ракомен. ru_RU.UTF-8 UTF-8
@@ -14,6 +48,7 @@
 5) проверка локами - locale
 
 ------------------------------------------------------------------------------------
+
 Установка анлог запретов https://github.com/Sergeydigl3/zapret-discord-youtube-linux
 1) git clone https://github.com/Sergeydigl3/zapret-discord-youtube-linux.git
 2) cd zapret-discord-youtube-linux
@@ -32,10 +67,7 @@
 
 ------------------------------------------------------------------------------------
 
-Установка yay
-1) git clone https://aur.archlinux.org/yay.git
-2) cd yay
-3) makepkg -si
+
 
 ------------------------------------------------------------------------------------
 
@@ -46,7 +78,7 @@ echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
 Установка MangoHud
 1) sudo pacman -S mangohud
-2) sudo vim ~/.config/MangoHud/MangoHud.conf (изменения конфига)
+2) sudo vim ~/.config/MangoHud/MangoHud.conf (изменения конфига)(есть репозитории)
 
 ------------------------------------------------------------------------------------
 
