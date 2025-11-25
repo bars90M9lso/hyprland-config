@@ -18,7 +18,7 @@
 
 Скачивание конфигов: git clone https://github.com/bars90M9lso/hyprland-config/
 
-Скачивание шрифтов: sudo pacman -5 ttf-font-awesome otf-font-awesome ttf-jetbrains-mono
+Скачивание шрифтов: sudo pacman -S ttf-font-awesome otf-font-awesome ttf-jetbrains-mono
  
 Копируем конфиги из репазитория в свои папки
 
