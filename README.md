@@ -10,6 +10,7 @@
 Замена Shell:
 1) chsh
 2) /bin/fish
+
 Установка тем (меняется через gui-приложение):
 1) git clone https://github.com/vinceliuice/Graphite-gtk-theme
 2) cd Graphite-gtk-theme/
