@@ -84,7 +84,19 @@
     
 ------------------------------------------------------------------------------------
 
-
+Установка Вирт.машины QEMU/KVM
+1) # Установка
+   sudo pacman -S qemu-full virt-manager virt-viewer dnsmasq bridge-utils ebtables iptables
+2) # Включение служб
+  sudo systemctl enable --now libvirtd.service
+  sudo usermod -a -G libvirt $USER
+3) # Для Intel CPU
+  sudo pacman -S intel-ucode
+4) # Настройка вирт.сети
+  sudo nmcli connection add type bridge autoconnect yes con-name virbr0 ifname virbr0
+  sudo nmcli connection modify virbr0 ipv4.method shared
+  sudo nmcli connection up virbr0
+  reboot
 
 ------------------------------------------------------------------------------------
 
