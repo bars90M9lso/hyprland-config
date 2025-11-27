@@ -3,7 +3,7 @@
 
 ------------------------------------------------------------------------------------
 
-Предустановка программ в Archinstall: git, fifefox, blueman, thunar, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils), p7zip
+Предустановка программ в Archinstall: git, fifefox, blueman, thunar, brightnessctl, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils), p7zip
 
 Доп.пакеты: nwg-look papirus-icon-theme fastfetch, 
 
@@ -129,10 +129,7 @@ echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
 ------------------------------------------------------------------------------------
 
-# Установка light для управления яркостью экрана
-1) yay -S light
-2) sudo chmod +s /usr/bin/light (даём разрешение на изменение)
-Бинд есть в hyprland.conf
+
 
 ------------------------------------------------------------------------------------
 # Установка hyprshot - для скриншотов
