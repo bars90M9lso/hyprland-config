@@ -24,7 +24,7 @@
 
 ------------------------------------------------------------------------------------
 
-Установка wlogout - панелька выхода/завершение систему
+# Установка wlogout - панелька выхода/завершение систему
 1) sudo pacman -S meson
 2) https://github.com/ArtsyMacaw/wlogout.git
 3) cd wlogout/
@@ -34,14 +34,14 @@
 
 ------------------------------------------------------------------------------------
 
-Установка yay
+# Установка yay
 1) git clone https://aur.archlinux.org/yay.git
 2) cd yay
 3) makepkg -si
 
 ------------------------------------------------------------------------------------
 
-Установка руского языка в системе
+# Установка руского языка в системе
 1) sudo vim /etc/locale.gen 
    ищем и ракомен. ru_RU.UTF-8 UTF-8
 2) sudo locale-gen
@@ -53,7 +53,8 @@
 
 ------------------------------------------------------------------------------------
 
-Установка анлог запретов https://github.com/Sergeydigl3/zapret-discord-youtube-linux
+# Установка анлог запретов 
+https://github.com/Sergeydigl3/zapret-discord-youtube-linux
 1) git clone https://github.com/Sergeydigl3/zapret-discord-youtube-linux.git
 2) cd zapret-discord-youtube-linux
 3) sudo bash main_script.sh
@@ -61,7 +62,7 @@
 
 ------------------------------------------------------------------------------------
 
-Дополнение для файлового менеджера Thunar
+# Дополнение для файлового менеджера Thunar
 1) sudo pacman -S thunar thunar-volman gvfs gvfs-mtp gvfs-gphoto2 udisks2 thunar-archive-plugin file-roller unrar unzip tar
    
     thunar-volman – плагин для автоподключения съёмных носителей.
@@ -84,18 +85,29 @@
     
 ------------------------------------------------------------------------------------
 
-Установка Вирт.машины QEMU/KVM
-1) # Установка
+# Установка Вирт.машины QEMU/KVM
+1) Установка
+
    sudo pacman -S qemu-full virt-manager virt-viewer dnsmasq bridge-utils ebtables iptables
-2) # Включение служб
-  sudo systemctl enable --now libvirtd.service
-  sudo usermod -a -G libvirt $USER
-3) # Для Intel CPU
-  sudo pacman -S intel-ucode
-4) # Настройка вирт.сети
+
+2) Включение служб
+  
+   sudo systemctl enable --now libvirtd.service
+
+   sudo usermod -a -G libvirt $USER
+
+3) Для Intel CPU
+
+   sudo pacman -S intel-ucode
+
+4) Настройка вирт.сети
+   
   sudo nmcli connection add type bridge autoconnect yes con-name virbr0 ifname virbr0
+  
   sudo nmcli connection modify virbr0 ipv4.method shared
+  
   sudo nmcli connection up virbr0
+  
   reboot
 
 ------------------------------------------------------------------------------------
@@ -106,41 +118,41 @@ echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
 ------------------------------------------------------------------------------------
 
-Установка MangoHud
+# Установка MangoHud
 1) sudo pacman -S mangohud
 2) sudo vim ~/.config/MangoHud/MangoHud.conf (изменения конфига)(есть репозитории)
 
 ------------------------------------------------------------------------------------
 
-Установка light для управления яркостью экрана
+# Установка light для управления яркостью экрана
 1) yay -S light
 2) sudo chmod +s /usr/bin/light (даём разрешение на изменение)
 Бинд есть в hyprland.conf
 
 ------------------------------------------------------------------------------------
-Установка hyprshot - для скриншотов
+# Установка hyprshot - для скриншотов
 1) yay -S hyprshot
 Бинд есть в hyprland.conf
 
-Установка NormCap - утилита для захвата текста с экрана + OCR + копирование в буфер
+# Установка NormCap - утилита для захвата текста с экрана + OCR + копирование в буфер
 1) yay -S normcap
 2) sudo pacman -S tesseract tesseract-data-eng tesseract-data-rus
 4) tesseract --list-langs (проверка установочных пакетов языка)
 
 ------------------------------------------------------------------------------------
 
-Установка диспечера задачь Mission Center
+# Установка диспечера задачь Mission Center
 1) yay -S mission-center
 Бинд есть в hyprland.conf
 
 ------------------------------------------------------------------------------------
 
-Управление охлаждением и цп и гп (работает неполностью)
+# Управление охлаждением и цп и гп (работает неполностью)
 1) yay -S tuxedo-control-center
 
 подсветкой можно управлять или ↑ или ↓
 
-Управления подсветкой квавиатуры для ПК от Clevo
+# Управления подсветкой квавиатуры для ПК от Clevo
 https://novacustom.com/clevo-keyboard-backlight-control-for-linux/
 
 1) sudo pacman -S linux-headers (если не установлен)
@@ -148,7 +160,7 @@ https://novacustom.com/clevo-keyboard-backlight-control-for-linux/
 
 ------------------------------------------------------------------------------------
 
-Установка темы SDDM https://github.com/Keyitdev/sddm-astronaut-theme/tree/master
+# Установка темы SDDM https://github.com/Keyitdev/sddm-astronaut-theme/tree/master
 1) sudo pacman -S sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
 2) sudo git clone -b master --depth 1 https://github.com/Keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
 3) sudo cp -r /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
