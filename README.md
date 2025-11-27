@@ -3,7 +3,7 @@
 
 ------------------------------------------------------------------------------------
 
-Предустановка программ в Archinstall: git, fifefox, blueman, thunar, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils), 
+Предустановка программ в Archinstall: git, fifefox, blueman, thunar, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils), p7zip
 
 Доп.пакеты: nwg-look papirus-icon-theme fastfetch, 
 
@@ -62,13 +62,26 @@
 ------------------------------------------------------------------------------------
 
 Дополнение для файлового менеджера Thunar
-1) sudo pacman -S thunar thunar-volman gvfs gvfs-mtp gvfs-gphoto2 udisks2
+1) sudo pacman -S thunar thunar-volman gvfs gvfs-mtp gvfs-gphoto2 udisks2 thunar-archive-plugin file-roller unrar unzip tar
    
     thunar-volman – плагин для автоподключения съёмных носителей.
+    
     gvfs – обеспечивает доступ к виртуальным файловым системам (MTP, SMB, FTP и т.д.).
+    
     gvfs-mtp/gvfs-gphoto2 – для работы с телефонами и камерами.
+    
     udisks2 – система для управления дисками.
 
+    thunar-archive-plugin - Добавляет в контекстное меню пункты для работы с архивами
+
+    file-roller - Графический архиватор
+
+    unrar - Утилита для распаковки RAR архивов
+   
+    unzip - Утилита для распаковки ZIP архивов
+
+    tar - Утилита для работы с архивами
+    
 ------------------------------------------------------------------------------------
 
 
