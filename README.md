@@ -117,8 +117,6 @@ https://github.com/Sergeydigl3/zapret-discord-youtube-linux
 
 ------------------------------------------------------------------------------------
 
-chmod +x ~/.config/hypr/toggle_kbd_backlight.sh
-
 echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
 ------------------------------------------------------------------------------------
@@ -153,7 +151,8 @@ echo 1 | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
 
 ------------------------------------------------------------------------------------
 
-# Установка темы SDDM https://github.com/Keyitdev/sddm-astronaut-theme/tree/master
+# Установка темы SDDM 
+https://github.com/Keyitdev/sddm-astronaut-theme/tree/master
 1) sudo pacman -S sddm qt6-svg qt6-virtualkeyboard qt6-multimedia-ffmpeg
 2) sudo git clone -b master --depth 1 https://github.com/Keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
 3) sudo cp -r /usr/share/sddm/themes/sddm-astronaut-theme/Fonts/* /usr/share/fonts/
