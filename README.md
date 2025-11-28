@@ -3,11 +3,12 @@
 
 ------------------------------------------------------------------------------------
 
-Предустановка программ в Archinstall: git, fifefox, blueman, thunar, brightnessctl, hyprlock, hyprpaper, waybar, telegram-desktop, fish(доп.пакеты:pkgfile ttf-dejavu powerline-fonts inetutils), p7zip
+Предустановка программ в Archinstall: git, fifefox, blueman, thunar, brightnessctl, hyprlock, hyprpaper, waybar, telegram-desktop, fish, p7zip
 
 Доп.пакеты: nwg-look papirus-icon-theme fastfetch, 
 
 Замена Shell:
+0.5) sudo pacman -S pkgfile ttf-dejavu powerline-fonts inetutils
 1) chsh
 2) /bin/fish
 
